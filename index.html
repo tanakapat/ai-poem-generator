@@ -9,13 +9,14 @@
 		<link rel="stylesheet" href="src/styles.css" />
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 		<title>The AI Poem Generator</title>
 	</head>
 	<body>
 		<div class="container">
 			<header><h1>Welcome to the AI Poem Generator</h1></header>
 
-			<form>
+			<form id="poem-generator-form">
 				<input
 					type="text"
 					placeholder="Enter the topic you want"
@@ -26,7 +27,7 @@
 				<input type="submit" class="submit-button" />
 			</form>
 
-			<div class="poem-section"><p>Nice poem here</p></div>
+			<div class="poem-section" id="poem-section"></div>
 
 			<footer>
 				This AI project was coded by
